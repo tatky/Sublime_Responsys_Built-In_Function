@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>name</key>
+    <string>Built-In Function</string>
+    <key>scopeName</key>
+    <string>source.responsys_builtin_function</string>
+    <key>uuid</key>
+    <string>9b597cba-0612-4f3d-8e02-edaa14abdc95</string>
+    <key>patterns</key>
+    <array>
+        <dict>
+            <key>comment</key>
+            <string>Function</string>
+            <key>match</key>
+            <string>(?i:\b(add|avg|base64encode|bazaarvoiceauthstring|between|campaignid|campaignmarketingprogram|campaignmarketingstrategy|campaignname|capitalizewords|clickthrough|charat|commalist|concat|cond|containsvalue|count|dateformat|div|divformat|document|documentnobr|emaildomain|empty|endswith|escapecommas|externalcampaigncode|firstname|foreach|foreachnobr|formlink|generateContentFromXML|getURLContent|hex|indexof|launchid|leadingcapital|listcontains|lookup|lookuprecords|lookuptable|lowercase|max|messageformat|min|mod|mul|nonemptyfields|nonemptyvalues|not|nothing|numberformat|outputencoding|outputjsencoding|prefilledform|rand|randomsubset|replaceall|replacefirst|round|securedigest|secureDigestAsHex|select|setglobalvars|setvars|space|startswith|stringlength|sub|substring|todayformat|unique|uppercase|urlencode|varlist)\b)</string>
+            <key>name</key>
+            <string>entity.name.function.responsys_builtin_function</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>AndOr</string>
+            <key>match</key>
+            <string>(?i:\b(not|and|or|eq|ge|gt|le|lt|ne)\b)</string>
+            <key>name</key>
+            <string>keyword.operator.responsys_builtin_function</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>dateFormat</string>
+            <key>match</key>
+            <string>(?i:\b(G|yyyy|yy|MMMM|MMM|MM|M|ww|w|W|DDD|D|dd|d|F|EEEE|E|a|HH|H|kk|k|KK|K|hh|h|mm|m|ss|s|S|zzzz|ZZZZ|z|Z)\b)</string>
+            <key>name</key>
+            <string>constant.other.responsys_builtin_function</string>
+        </dict>
+        <dict>
+            <key>comment</key>
+            <string>$</string>
+            <key>match</key>
+            <string>(?i:\$)</string>
+            <key>name</key>
+            <string>string.other.responsys_builtin_function</string>
+        </dict>
+    </array>
+</dict>
+</plist>
